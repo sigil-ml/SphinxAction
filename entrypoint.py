@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os
 import json
-from sphinx_action import action
+from src import action
 
 # This is the entrypoint called by Github when our action is run. All the
 # Github specific setup is done here to make it easy to test the action code
