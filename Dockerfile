@@ -4,6 +4,7 @@ LABEL image.authors="SIGIL"
 
 RUN pip install sphinx_rtd_theme
 
-COPY entrypoint.sh .
+ADD entrypoint.py /entrypoint.py
+ADD sphinx_action /sphinx_action
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.py"]
